@@ -1,0 +1,54 @@
+-- Database: MyReportDatabase
+
+-- DROP DATABASE "MyReportDatabase";
+
+CREATE DATABASE "MyReportDatabase"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE MockInformation (
+	Id integer CONSTRAINT firstkey PRIMARY KEY,
+	Name varchar(50) NULL, 
+	"Date" Date,
+	Active bit
+)
+
+INSERT INTO MockInformation values (
+	1,
+	'Test Dude',
+	'2018-01-01',
+	B'1'
+)
+
+INSERT INTO MockInformation values (
+	2,
+	'Test Dude 2',
+	'2018-01-01',
+	B'1'
+)
+
+INSERT INTO MockInformation values (
+	3,
+	'Test Dude 3',
+	'2018-01-01',
+	B'1'
+)
+
+INSERT INTO MockInformation values (
+	4,
+	'Test Dude 4',
+	'2018-01-01',
+	B'1'
+)
+
+INSERT INTO MockInformation values (
+	5,
+	'Test Dude 5',
+	'2018-01-01',
+	B'1'
+)
